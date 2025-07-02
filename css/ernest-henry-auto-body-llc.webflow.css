@@ -222,7 +222,7 @@
   background-color: var(--transparent);
   background-image: linear-gradient(#0000, #0000);
   border: 1px solid #0000;
-  padding: 2% 20px;
+  padding: 8em 20px 2%;
   font-family: "Rothek 4", sans-serif;
   position: relative;
 }
@@ -331,7 +331,7 @@
   margin-top: 0;
   padding: 0 30px 20px;
   display: flex;
-  position: fixed;
+  position: absolute;
   inset: auto 0% 0%;
 }
 
@@ -603,7 +603,8 @@
   margin-top: 0;
   padding: 10px 2%;
   display: flex;
-  position: relative;
+  position: fixed;
+  inset: 0% 0% auto;
 }
 
 .body {
