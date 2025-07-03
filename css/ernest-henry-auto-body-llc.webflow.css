@@ -32,7 +32,7 @@
 
 :root {
   --transparent: #fff0;
-  --black: black;
+  --beige: #f2efde;
   --white: white;
 }
 
@@ -243,7 +243,7 @@
 }
 
 .centered-heading.margin-bottom-32px {
-  color: #000;
+  color: #f2efde;
   margin-bottom: 32px;
   font-family: "Rothek 4", sans-serif;
   font-size: 250%;
@@ -265,7 +265,7 @@
 }
 
 .margin-bottom-24px {
-  color: #000;
+  color: #f2efde;
   text-align: center;
   margin-bottom: 24px;
   font-family: "Rothek 4", sans-serif;
@@ -322,7 +322,7 @@
 
 .footer-dark {
   -webkit-text-fill-color: inherit;
-  background-color: #0000;
+  background-color: #f2efde00;
   background-clip: border-box;
   border: 1px solid #0000;
   flex-flow: column;
@@ -331,7 +331,7 @@
   margin-top: 0;
   padding: 40px 30px 20px;
   display: flex;
-  position: absolute;
+  position: fixed;
   inset: auto 0% 0%;
 }
 
@@ -477,7 +477,7 @@
 
 .rl_navbar1_button-secondary {
   aspect-ratio: auto;
-  border: 1px solid var(--black);
+  border: 1px solid var(--beige);
   color: #000;
   text-align: center;
   background-color: #0000;
@@ -573,7 +573,7 @@
 }
 
 .text-block {
-  color: #fff;
+  color: #f2efde;
   text-align: center;
   object-fit: fill;
   width: 100%;
@@ -581,7 +581,7 @@
 }
 
 .rl_navbar1_container-2 {
-  color: var(--black);
+  color: var(--beige);
   background-color: #0000;
   border: 1px solid #0000;
   justify-content: space-between;
@@ -595,7 +595,7 @@
 
 .rl_navbar1_component-2 {
   border: 1px solid var(--transparent);
-  background-color: #0000001a;
+  background-color: #f2efde;
   align-items: center;
   width: 100%;
   height: auto;
@@ -609,25 +609,22 @@
 
 .body {
   color: #f2efde;
-  background-color: #f2efde00;
-  background-image: url('../images/shop-website-background.png');
-  background-position: 0 0;
-  background-size: auto;
+  background-color: #363636;
 }
 
 .link {
-  color: #000;
+  color: #f2efde;
   font-family: "Rothek 4", sans-serif;
 }
 
 .code {
-  color: var(--black);
+  color: var(--beige);
   font-family: "Rothek 4", sans-serif;
   text-decoration: underline;
 }
 
 .text-span {
-  color: #000;
+  color: #f2efde;
 }
 
 .html-embed {
@@ -687,7 +684,7 @@
 }
 
 .paragraph-3 {
-  color: #000;
+  color: #f2efde;
   text-align: left;
   width: 25em;
   margin-bottom: 0;
@@ -778,7 +775,7 @@
 }
 
 .paragraph-4 {
-  color: #000;
+  color: #f2efde;
   text-align: center;
   font-family: "Rothek 4", sans-serif;
   font-size: 1em;
@@ -947,7 +944,10 @@
   }
 
   .footer-dark {
-    padding-top: 20px;
+    margin-top: 0;
+    padding-top: 0;
+    position: relative;
+    inset: auto 0% 0%;
   }
 
   .footer-content {
@@ -1117,6 +1117,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 60px;
+    padding-bottom: 0;
     display: flex;
   }
 
@@ -1211,6 +1213,8 @@
     padding-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
+    position: relative;
+    inset: auto 0% 0%;
   }
 
   .footer-wrapper {
@@ -1270,7 +1274,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 20em;
+    width: auto;
     max-width: none;
   }
 
@@ -1282,6 +1286,7 @@
 
   .container-9 {
     flex-flow: column;
+    width: auto;
   }
 }
 
@@ -1335,11 +1340,11 @@
     grid-auto-columns: 1fr;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 0;
     padding-top: 20px;
     display: flex;
-    position: static;
-    inset: auto auto 0% 0%;
+    position: relative;
+    inset: auto 0% 0%;
   }
 
   .footer-copyright-center {
