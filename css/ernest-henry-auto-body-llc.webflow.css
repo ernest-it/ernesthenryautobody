@@ -251,6 +251,7 @@
 }
 
 .hero-wrapper {
+  flex-flow: column;
   justify-content: space-between;
   align-items: center;
   display: flex;
@@ -267,8 +268,12 @@
 .margin-bottom-24px {
   color: #f2efde;
   text-align: center;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 24px;
   font-family: "Rothek 4", sans-serif;
+  display: flex;
 }
 
 .button-primary-2 {
@@ -331,7 +336,7 @@
   margin-top: 0;
   padding: 40px 30px 20px;
   display: flex;
-  position: fixed;
+  position: relative;
   inset: auto 0% 0%;
 }
 
@@ -783,6 +788,16 @@
 
 .container-12 {
   padding-top: 20px;
+}
+
+.paragraph-5 {
+  overflow-wrap: normal;
+  width: auto;
+  margin-left: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Rothek 4", sans-serif;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 1280px) {
