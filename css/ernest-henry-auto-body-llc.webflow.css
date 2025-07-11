@@ -745,6 +745,12 @@
   padding-bottom: 40px;
 }
 
+.container-8 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 .body-2 {
   color: #f2efde;
   background-color: #f2efde;
@@ -809,7 +815,11 @@
 
 .paragraph-6 {
   text-align: center;
+  width: 40em;
   margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.25em;
 }
 
 .div-block-2 {
@@ -1094,11 +1104,13 @@
   }
 
   .rl_navbar1_menu.is-page-height-tablet {
+    background-color: #363636;
     height: 100vh;
     padding-bottom: 15rem;
   }
 
   .rl_navbar1_link {
+    color: #f2efde;
     width: auto;
     padding: .75rem 0;
     font-size: 1.125rem;
@@ -1315,8 +1327,16 @@
     align-items: center;
   }
 
+  .container-8 {
+    flex-flow: column;
+  }
+
   .container-9 {
     flex-flow: column;
+    width: auto;
+  }
+
+  .paragraph-6 {
     width: auto;
   }
 }
@@ -1445,9 +1465,17 @@
     display: flex;
   }
 
+  .container-8 {
+    flex-flow: column;
+  }
+
   .container-9 {
     flex-flow: column;
     width: auto;
+  }
+
+  .paragraph-6 {
+    width: 20em;
   }
 }
 
