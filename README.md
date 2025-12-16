@@ -1,1 +1,1 @@
-[ernesthenry.net](ernesthenry.net)
+[ernesthenry.net](https://www.ernesthenry.net/)
