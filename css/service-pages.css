@@ -1,0 +1,239 @@
+/* Service Pages Specific Styles */
+
+/* Page Hero */
+.page-hero {
+  padding: calc(80px + var(--spacing-2xl)) var(--spacing-md) var(--spacing-xl);
+  background: linear-gradient(135deg, #2a2a2a 0%, #363636 100%);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.page-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+}
+
+.page-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* Content Section */
+.content-section {
+  padding: var(--spacing-3xl) var(--spacing-md);
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: var(--spacing-2xl);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.content-main {
+  min-width: 0; /* Prevents grid blowout */
+}
+
+.content-article {
+  background-color: var(--color-card-bg);
+  padding: var(--spacing-2xl);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.content-article h2 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-text);
+}
+
+.content-article h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-accent);
+}
+
+.content-article p {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.8;
+  color: var(--color-text);
+  opacity: 0.95;
+}
+
+.content-block {
+  margin-bottom: var(--spacing-2xl);
+  padding-bottom: var(--spacing-2xl);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.content-block:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.styled-list {
+  margin: var(--spacing-md) 0;
+  padding-left: var(--spacing-xl);
+}
+
+.styled-list li {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.8;
+  color: var(--color-text);
+  opacity: 0.95;
+}
+
+.styled-list li strong {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+/* Sidebar */
+.content-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.sidebar-card {
+  background-color: var(--color-card-bg);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.sidebar-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+}
+
+.sidebar-card p {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.sidebar-card p:last-child {
+  margin-bottom: 0;
+}
+
+.cta-card {
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+  color: var(--color-bg);
+  border-color: var(--color-accent);
+}
+
+.cta-card h3,
+.cta-card p {
+  color: var(--color-bg);
+}
+
+.btn-block {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-bottom: var(--spacing-sm);
+}
+
+.btn-block:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-links {
+  list-style: none;
+}
+
+.sidebar-links li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.sidebar-links a {
+  color: var(--color-text);
+  text-decoration: none;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  display: block;
+  border-radius: var(--border-radius-sm);
+  transition: var(--transition);
+  opacity: 0.8;
+}
+
+.sidebar-links a:hover,
+.sidebar-links a.active {
+  background-color: var(--color-bg);
+  color: var(--color-accent);
+  opacity: 1;
+}
+
+.sidebar-address {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Active nav link state */
+.nav-link.active {
+  color: var(--color-accent);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .content-sidebar {
+    order: -1;
+  }
+
+  .content-article {
+    padding: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: calc(80px + var(--spacing-xl)) var(--spacing-md) var(--spacing-lg);
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .content-section {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+
+  .content-article {
+    padding: var(--spacing-md);
+  }
+
+  .content-article h2 {
+    font-size: 1.75rem;
+  }
+
+  .content-article h3 {
+    font-size: 1.25rem;
+  }
+}
